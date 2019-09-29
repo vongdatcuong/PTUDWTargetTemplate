@@ -1,0 +1,344 @@
+* {
+	box-sizing: border-box;
+}
+$bodyBg: #e8e8e8;
+$containerBg: #ffffff;
+$titleColor: #3c3c3c;
+$color: #838383;
+@font-face {
+    font-family: Designosaur;
+    src: url('../fonts/designosaur-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/designosaur-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/designosaur-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/designosaur-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/designosaur-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {
+	background-color: $bodyBg;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: $titleColor;
+	font-family: Designosaur;
+}
+img {
+	max-width: 100%;
+}
+.container {
+	background-color: $containerBg;
+	margin: 10px auto;
+	border: 1px solid #CCC;
+	color: $color;
+}
+/*Header*/
+#header {
+	padding: 20px 10px;
+	border-bottom: 1px solid #CCCCCC;
+	img#logo {
+		float: left;
+	}
+	h6 {
+		float: left;
+		color: #d1d1d1;
+		margin: 5px 10px;
+		font-family: Designosaur;
+	}
+	h4 {
+		float: right;
+		color: #cd2027;
+		font-family: Designosaur;
+	}
+	br {
+		clear: both;
+	}
+}
+/*Main Intro*/
+#main-intro {
+	padding: 45px 45px;
+	#main-intro-left {
+		h1 {
+			margin: 15px 5px;
+		}
+		p {
+			padding: 5px;
+		}
+		span {
+			margin: 0 25px;
+			font-weight: bold;
+			color: #000000;
+		}
+		
+	}
+	#main-intro-right {
+		text-align: center;
+		padding: 10px 0;
+		position: relative;
+		#main-intro-right-chevron-left {
+			position: absolute;
+			padding: 5px 14px;
+			border-radius: 50%;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #555555;
+			left: 2%;
+			top: 40%;
+		}
+		#main-intro-right-chevron-right {
+			position: absolute;
+			padding: 5px 14px;
+			border-radius: 50%;
+			font-weight: bold;
+			font-size: 1.5em;
+			color: #555555;
+			right: 2%;
+			top: 40%;
+		}
+	}
+	border-bottom: 1px solid #CCCCCC;
+}
+.group-btn {
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+}
+.purchase-btn {
+	background: linear-gradient(0deg, rgb(255, 94, 0) 0%, rgb(255, 147, 0) 80%);
+	border-radius: 25px;
+	color: #ca4500;
+	padding: 7px 25px;
+	font-size: 1.3em;
+	font-family: Designosaur;
+}
+.purchase-btn:hover {
+	background: linear-gradient(0deg, rgb(203, 203, 203), rgb(241, 241, 241) 80%);
+	border-radius: 25px;
+	color: rgb(255, 94, 0);
+}
+.tour-btn {
+	background: linear-gradient(0deg, rgb(203, 203, 203), rgb(241, 241, 241) 80%);
+	border-radius: 25px;
+	color: $color;
+	padding: 7px 25px;
+	font-size: 1.3em;
+	font-family: Designosaur;
+}
+.tour-btn:hover {
+	background: linear-gradient(0deg, rgb(255, 94, 0) 0%, rgb(255, 147, 0) 80%);
+	border-radius: 25px;
+	color: rgb(255, 94, 0);
+}
+/*Advantages*/
+#advantages {
+	padding: 60px 45px;
+	.row {
+		div {
+			img {
+				float: left;
+				clear: both;
+		
+			}
+			.advantages-content {
+				display: inline;
+				float: right;
+			}
+		}
+	}
+	border-bottom: 1px solid #CCCCCC;
+}
+/*Features*/
+#features {
+	padding: 35px 45px;
+	h5 {
+		padding: 10px 0;
+	}
+	ul {
+		list-style-type: none;
+		li {
+			border-bottom: 1px solid #DDDDDD;
+			padding: 10px 0;
+			color: #dd8c5c;
+			i {
+				padding-right: 10px;
+				color: $color;
+			}
+			&:first-child {
+				padding-top: 0;
+			};
+		}
+
+	}
+	border-bottom: 1px solid #CCCCCC;
+}
+/*Screenshots*/
+#screenshots {
+	padding: 25px 45px;
+	h5 {
+		padding: 15px 0;
+	}
+	.row:nth-child(2) {
+		div div {
+			text-align: center;
+		}
+	}
+	border-bottom: 1px solid #CCCCCC;
+}
+/*Customer Review*/
+#customer-review {
+	padding: 25px 45px;
+	h5 {
+		padding: 15px 0;
+	}
+	.row:nth-child(2){
+		div div {
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			padding: 40px 35px;
+			font-size: 1.4em;
+			font-style: italic;
+			border: 1px solid #CCCCCC;
+		}
+	}
+	.row:nth-child(3){
+		padding: 10px 0;
+	}
+	.row:nth-child(4){
+		padding: 10px 0;
+		span {
+			margin: 0 25px;
+			font-weight: bold;
+			color: #000000;
+		}
+		div {
+			text-align: center;
+		}
+	}
+	border-bottom: 1px solid #CCCCCC;
+}
+/*Footer*/
+footer#footer {
+	.row:first-child {
+		background-color: #373737;
+		padding: 20px 25px 10px 25px;
+		div:not(.icons-row) {
+			padding: 5px 10px;
+			h5 {
+				color: #cecece;
+				padding: 15px 0;
+			}
+		}
+	}
+	.row:nth-child(2) {
+		background-color: #222222;
+		padding: 15px 25px 15px 20px;
+		div.icons-row {
+			padding: 0;
+		}
+	}
+}
+.icons-row {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+	justify-content: center;
+	span.icons-row-item a {
+		border-radius: 50%;
+		transition: all 0.5s ;
+	}
+	span.icons-row-item:not(:first-child) {
+		padding: 0 5px;
+	}
+	span.icons-row-item:first-child {
+		padding-right: 5px;
+	}
+}
+.icons-row-item a:hover {
+	background-color: #ffffff;
+}
+.author {
+	color: #dd8c5c;
+	font-style: italic;
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px){
+	/*Main Intro*/
+	#main-intro {
+		#main-intro-left {
+			span {
+				margin: 0 10px;
+			}
+		}
+		#main-intro-right {
+			#main-intro-right-chevron-left {
+				left: -5%;
+				top: 20%;
+			}
+			#main-intro-right-chevron-right {
+				right: -5%;
+				top: 20%;
+			}
+		}
+	}
+	.purchase-btn {
+		padding: 3px 12px;
+		font-size: 1em;
+	}
+	.tour-btn {
+		padding: 3px 12px;
+		font-size: 1.1em;
+	}
+	/*Features*/
+	#features {
+		ul {
+			padding: 0 5px;
+		}
+	}
+}
+/*Mobile*/
+@media screen and (max-width: 360px){
+	/*Header*/
+	header#header {
+		h4, h6 {
+			float: left;
+			padding: 5px 0;
+		}
+	}
+	/*Main Intro*/
+	#main-intro {
+		#main-intro-left {
+		}
+		#main-intro-right {
+			#main-intro-right-chevron-left {
+				left: -7%;
+				top: 30%;
+			}
+			#main-intro-right-chevron-right {
+				right: -7%;
+				top: 30%;
+			}
+		}
+	}
+	.purchase-btn {
+		display: block;
+		padding: 3px 12px;
+		font-size: 1em;
+		margin: 0 auto;
+	}
+	.tour-btn {
+		display: block;
+		padding: 3px 12px;
+		font-size: 1.1em;
+		margin: 0 auto;
+
+	}
+	/*Footer*/
+	footer#footer {
+		.row:nth-child(2) {
+			div.icons-row {
+				padding: 10px;
+			}
+		}
+	}
+}
