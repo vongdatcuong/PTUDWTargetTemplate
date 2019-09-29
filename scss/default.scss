@@ -241,7 +241,6 @@ footer#footer {
 	display: flex;
 	flex-direction: row;
 	padding: 10px 0;
-	justify-content: center;
 	span.icons-row-item a {
 		border-radius: 50%;
 		transition: all 0.5s ;
@@ -340,5 +339,8 @@ footer#footer {
 				padding: 10px;
 			}
 		}
+	}
+	.icons-row {
+		justify-content: center;
 	}
 }
